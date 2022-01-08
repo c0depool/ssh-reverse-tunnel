@@ -1,13 +1,14 @@
 version: '2'
-    services:
-      reverse-tunnel:
-        image: codepool/ssh-reverse-tunnel:v1
-        volumes:
-          - $HOME/.ssh:/root/ssh
-        environment:
-          TUNNEL_HOST: <local application>
-          TUNNEL_PORT: <local application port>
-          REMOTE_HOST: <remote server hostname/IP>
-          REMOTE_PORT: <remote port which should listen to your local port>
-          USERNAME: <remote server username>
-          SSH_EXTRA_OPTS: "-v -o ServerAliveInterval=60"
+services:
+  reverse-tunnel:
+    image: codepool/ssh-reverse-tunnel:v2
+    network_mode: host
+    volumes:
+      - $HOME/.ssh:/root/ssh
+    environment:
+      TUNNEL_HOST: <local application>
+      TUNNEL_PORT: <local application port>
+      REMOTE_HOST: <remote server hostname/IP>
+      REMOTE_PORT: <remote port which should listen to your local port>
+      USERNAME: <remote server username>
+      SSH_EXTRA_OPTS: "-v -o ServerAliveInterval=60"
