@@ -33,7 +33,6 @@ spec:
               value: "-v -o ServerAliveInterval=60"
           image: codepool/ssh-reverse-tunnel:v2
           name: reverse-tunnel
-          imagePullPolicy: Never
           volumeMounts:
             - mountPath: /root/ssh
               name: ssh-key
