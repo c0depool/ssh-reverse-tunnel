@@ -1,5 +1,12 @@
 # SSH Reverse Tunnel
 
+<div align="left">
+
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/c0depool/ssh-reverse-tunnel/Docker?style=for-the-badge)](https://github.com/c0depool/ssh-reverse-tunnel/actions/workflows/docker-publish.yml)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/c0depool/ssh-reverse-tunnel?sort=semver&style=for-the-badge)](https://github.com/c0depool/ssh-reverse-tunnel/releases)
+
+</div>
+
 This is a simple SSH reverse tunnel to forward your local port to a remote server without the needing to change any configuration on your router. You can use this to expose your local applications to internet if you have a compute resource on any Public Cloud platform (like AWS, GCP, Azure, OCI etc.).
 
 ## Usage
