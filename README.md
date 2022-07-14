@@ -14,7 +14,7 @@ Now in docker-compose.yml you can define the reverse tunnel as follows:
     version: '2'
     services:
       reverse-tunnel:
-        image: codepool/ssh-reverse-tunnel:v2
+        image: ghcr.io/ssh-reverse-tunnel
         volumes:
           - $HOME/.ssh:/root/ssh
         environment:

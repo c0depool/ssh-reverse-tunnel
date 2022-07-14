@@ -1,7 +1,7 @@
 version: '2'
 services:
   reverse-tunnel:
-    image: codepool/ssh-reverse-tunnel:v2
+    image: ghcr.io/ssh-reverse-tunnel
     network_mode: host
     volumes:
       - $HOME/.ssh:/root/ssh
