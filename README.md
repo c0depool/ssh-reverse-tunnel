@@ -2,7 +2,7 @@
 
 <div align="left">
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/c0depool/ssh-reverse-tunnel/Docker?style=for-the-badge)](https://github.com/c0depool/ssh-reverse-tunnel/actions/workflows/docker-publish.yml)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/c0depool/ssh-reverse-tunnel/docker-publish.yml?style=for-the-badge)](https://github.com/c0depool/ssh-reverse-tunnel/actions/workflows/docker-publish.yml)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/c0depool/ssh-reverse-tunnel?sort=semver&style=for-the-badge)](https://github.com/c0depool/ssh-reverse-tunnel/releases)
 
 </div>
