@@ -90,4 +90,4 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         env:
           COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
-        run: cosign sign --key cosign.key ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+        run: cosign sign --yes --key cosign.key ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
