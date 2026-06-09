@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine:3.24
 
 MAINTAINER github.com/c0depool
 
